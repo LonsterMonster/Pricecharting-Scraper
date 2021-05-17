@@ -42,7 +42,7 @@ def gameCsv(games):
         writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
         writer.writeheader()
         for g in games:
-            writer.writerow({'console': g.getConsole(), 'game': g.getTitle(), 'loose_val': g.getLoosePrice(), 'complete_val': g.getCompletePrice(), 'new_val': g.getNewPrice(), 'Genre': g.getGenre(), 'Release Date': g.getReleaseDate(), 'ESRB Rating': g.getESRBRating(), 'Publisher': g.getPublisher(), 'Developer': g.getDeveloper(), 'Model Number': g.getModelNumber(), 'Disc Count': g.getDiscCount(), 'Player Count': g.getPlayerCount(), 'Also Compatible On': g.getAlsoCompatibleOn(), 'UPC': g.getUPC(), 'Description': g.getDescription(), 'date(D/M/Y)': dt.split('_')[0].replace('.', '/')})
+            writer.writerow({'console': g.getTitle(), 'game': g.getConsole(), 'loose_val': g.getLoosePrice(), 'complete_val': g.getCompletePrice(), 'new_val': g.getNewPrice(), 'Genre': g.getGenre(), 'Release Date': g.getReleaseDate(), 'ESRB Rating': g.getESRBRating(), 'Publisher': g.getPublisher(), 'Developer': g.getDeveloper(), 'Model Number': g.getModelNumber(), 'Disc Count': g.getDiscCount(), 'Player Count': g.getPlayerCount(), 'Also Compatible On': g.getAlsoCompatibleOn(), 'UPC': g.getUPC(), 'Description': g.getDescription(), 'date(D/M/Y)': dt.split('_')[0].replace('.', '/')})
 
 
 def scrollBottom(console):
